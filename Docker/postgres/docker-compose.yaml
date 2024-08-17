@@ -1,7 +1,7 @@
 version: '3.3'
 
 services:
-  postgres:
+  postgres: 
     container_name: postgres
     image: postgres:15
     networks:
@@ -11,7 +11,7 @@ services:
     ports:
       - 5432:5432
     environment:
-      - POSTGRES_PASSWORD=PASSWORD
+      - POSTGRES_PASSWORD=Fx6587s!
     volumes:
       - postgres_data:/var/lib/postgresql/data
     expose:
@@ -22,8 +22,8 @@ services:
     networks:
       - evolution-net
     environment:
-      - PGADMIN_DEFAULT_EMAIL=EMAIL
-      - PGADMIN_DEFAULT_PASSWORD=PASSWORD  
+      - PGADMIN_DEFAULT_EMAIL=filipesaccaoffial@gmail.com
+      - PGADMIN_DEFAULT_PASSWORD=Fx3254s!
     volumes:
       - pgadmin_data:/var/lib/pgadmin
     ports:
